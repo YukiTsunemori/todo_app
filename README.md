@@ -1,6 +1,7 @@
 # Todo App
 
 Rails APIバックエンドとVue.jsフロントエンドを使用したTodoアプリケーションです。
+構築はCursorのAIにやってもらいました。。
 
 ## プロジェクト構造
 
