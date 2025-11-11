@@ -13,16 +13,6 @@ todo_app/
 
 ## セットアップ
 
-### バックエンド (Rails API)
-
-```bash
-cd backend
-bundle install
-rails db:create
-rails db:migrate
-rails server
-```
-
 バックエンドは `http://localhost:3000` で起動します。
 
 ### フロントエンド (Vue.js)
@@ -38,18 +28,16 @@ npm run dev
 ## 技術スタック
 
 ### バックエンド
-- Ruby on Rails (API mode)
+- Ruby on Rails (API mode) ver 
 - SQLite (開発環境)
 - CORS設定済み
 
 ### フロントエンド
-- Vue.js 3
+- Vue.js 3 (Options API)
 - Vue Router
 - Pinia (状態管理)
 - Vite (ビルドツール)
 - ESLint + Prettier
-- Vitest (テスト)
-- Playwright (E2Eテスト)
 
 ## 開発
 
