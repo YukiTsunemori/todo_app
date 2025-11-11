@@ -28,13 +28,13 @@ npm run dev
 ## 技術スタック
 
 ### バックエンド
-- Ruby on Rails (API mode) ver 
-- SQLite (開発環境)
+- Ruby on Rails (API mode) ver 8.0.2.1
+- PostgreSQL
 - CORS設定済み
 
 ### フロントエンド
-- Vue.js 3 (Options API)
-- Vue Router
+- Vue.js ver 3.5.22 (Options API)
+- Vue Router ver 4.6.3
 - Pinia (状態管理)
 - Vite (ビルドツール)
 - ESLint + Prettier
