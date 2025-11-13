@@ -1,0 +1,32 @@
+@startuml yonde
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+
+entity "User" as users {
+    id
+    --
+    name
+    email
+    password
+    created_at
+    updated_at
+}
+
+entity "Task" as tasks {
+    id
+    --
+    name
+    user_id <<FK>>
+    memo
+    completed_at
+    created_at
+    updated_at
+}
+
+users ||--o{ tasks : "has many"
+
+@enduml
