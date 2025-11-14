@@ -1,7 +1,7 @@
 # Todo App
 
 Rails APIバックエンドとVue.jsフロントエンドを使用したTodoアプリケーションです。
-構築はCursorのAIにやってもらいました。。
+構築はCursorのAIにやってもらいました。
 
 ## プロジェクト構造
 
@@ -23,7 +23,7 @@ npm install
 npm run dev
 ```
 
-フロントエンドは `http://localhost:5173` で起動します。
+フロントエンドは `http://localhost:3001` で起動します。
 
 ## 技術スタック
 
@@ -38,15 +38,3 @@ npm run dev
 - Pinia (状態管理)
 - Vite (ビルドツール)
 - ESLint + Prettier
-
-## 開発
-
-両方のサーバーを同時に起動して開発を進めることができます。
-
-```bash
-# ターミナル1: バックエンド
-cd backend && rails server
-
-# ターミナル2: フロントエンド
-cd frontend && npm run dev
-```
