@@ -3,7 +3,7 @@ class CreateTasks < ActiveRecord::Migration[8.0]
     create_table :tasks do |t|
       t.string :name
       t.text :memo
-      t.date :completed_at
+      t.datetime :completed_at
       t.references :user, null: false, foreign_key: true
 
       t.timestamps
