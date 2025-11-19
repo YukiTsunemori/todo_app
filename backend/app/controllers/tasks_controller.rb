@@ -6,13 +6,10 @@ class TasksController < ApplicationController
 
   def create
     @task = Task.new(todo_params)
-    # binding.irb
     if @task.save
       render json: @task, status: :created
-      # binding.irb
     else
       render json: @task, status: :unprocessable_content
-      # binding.irb
     end
   end
 
