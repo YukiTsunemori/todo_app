@@ -41,10 +41,10 @@
           <input v-model="user_id" />
         </div>
         <div>
-          <lable>
+          <label>
             期限を入力してください。
             <input type="date" v-model="deadline_at" :min="new Date().toISOString().split('T')[0]" />
-          </lable>
+          </label>
         </div>
         <button>追加</button>
       </form>
