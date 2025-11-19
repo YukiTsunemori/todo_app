@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <router-view />
-    <ApiTest />
+    <!-- <router-view /> -->
+    <TaskForm />
+    <TaskIndex />
   </div>
 </template>
 
 <script>
-import ApiTest from '@/components/ApiTest.vue'
-
+import TaskForm from '@/components/TaskForm.vue'
+import TaskIndex from '@/components/TaskIndex.vue'
 export default {
   name: 'App',
   components: {
-    ApiTest
+    TaskForm,
+    TaskIndex
   }
 }
 </script>
