@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
+  resources :tasks, except: [:show]
   devise_for :users
-  get 'api/test', to: 'application#test'
 end
