@@ -15,7 +15,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_11_19_092805) do
   enable_extension "pg_catalog.plpgsql"
 
   create_table "tasks", force: :cascade do |t|
-    t.string "name"
     t.text "memo"
     t.date "completed_at"
     t.bigint "user_id", null: false
