@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <router-view />
-    <ApiTest />
+    <LoginForm />
   </div>
 </template>
 
 <script>
-import ApiTest from '@/components/ApiTest.vue'
+import LoginForm from '@/components/LoginForm.vue'
 
 export default {
   name: 'App',
   components: {
-    ApiTest
+    LoginForm
   }
 }
 </script>
