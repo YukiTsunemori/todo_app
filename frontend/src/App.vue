@@ -1,17 +1,15 @@
 <template>
   <div id="app">
-    <router-view />
-    <ApiTest />
+    <TaskIndex />
   </div>
 </template>
 
 <script>
-import ApiTest from '@/components/ApiTest.vue'
-
+import TaskIndex from '@/components/TaskIndex.vue'
 export default {
   name: 'App',
   components: {
-    ApiTest
+    TaskIndex
   }
 }
 </script>
