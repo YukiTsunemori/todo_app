@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios';
+import railsApi from '../axios';
 export default {
     data() {
         return {
@@ -10,7 +10,7 @@ export default {
     methods: {
         postSession() {
             axios
-                .post('http://localhost:3000/users/sign_in', {
+                railsApi.post('/users/sign_in', {
                     user: {
                         email: this.email,
                         password: this.password
