@@ -9,7 +9,6 @@ export default {
     },
     methods: {
         postSession() {
-            axios
                 railsApi.post('/users/sign_in', {
                     user: {
                         email: this.email,
@@ -38,7 +37,7 @@ export default {
             <label>Password: </label><input type="password" v-model="password" placeholder="Password" />
         </div>
         <div>
-            <button>追加</button>
+            <button>ログイン</button>
         </div>
     </form>
 </div>
