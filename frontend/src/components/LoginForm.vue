@@ -29,7 +29,7 @@ export default {
 <template>
 <h1>ログイン</h1>
 <div>
-    <form @submit="postSession">
+    <form @submit.prevent="postSession">
         <div>
             <label>Email: </label><input type="text" v-model="email" placeholder="Email" />
         </div>
