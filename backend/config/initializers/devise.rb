@@ -46,7 +46,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  config.authentication_keys = [:email]
+  config.authentication_keys = [:name, :email]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -274,7 +274,7 @@ Devise.setup do |config|
     jwt.expiration_time = 1.day.to_i
     jwt.dispatch_requests = [
       ['POST', %r{^/users/sign_in$}],
-      # ['POST', %r{^/users/sign_up$}] サインアップ用のURLリクエストを受け付ける
+      ['POST', %r{^/users$}]
     ]
     jwt.revocation_requests = [
       ['DELETE', %r{^/users/sign_out$}]
