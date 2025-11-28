@@ -27,18 +27,18 @@ export default {
 }
 </script>
 <template>
-<h1>ログイン</h1>
-<div>
-    <form @submit.prevent="postSession">
-        <div>
-            <label>Email: </label><input type="text" v-model="email" placeholder="Email" />
-        </div>
-        <div>
-            <label>Password: </label><input type="password" v-model="password" placeholder="Password" />
-        </div>
-        <div>
-            <button>ログイン</button>
-        </div>
-    </form>
-</div>
+    <h1>ログイン</h1>
+    <div>
+        <form @submit.prevent="postSession">
+            <div>
+                <label>Email: </label><input type="text" v-model="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>Password: </label><input type="password" v-model="password" placeholder="Password" />
+            </div>
+            <div>
+                <button>ログイン</button>
+            </div>
+        </form>
+    </div>
 </template>
