@@ -37,4 +37,3 @@ npm run dev
 - Vue Router ver 4.6.3
 - Pinia (状態管理)
 - Vite (ビルドツール)
-- ESLint + Prettier
