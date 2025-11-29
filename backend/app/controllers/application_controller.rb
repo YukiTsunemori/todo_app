@@ -1,5 +1,13 @@
 class ApplicationController < ActionController::API
-  def test
-    render json: { message: 'This is the test message.' }
+  include Devise::Controllers::Helpers
+  
+  before_action :authenticate_user!, unless: :devise_controller?
+    
+  private
+  
+  def authenticate_user!
+    unless user_signed_in?
+      render json: { error: 'Unauthorized' }, status: :unauthorized
+    end
   end
 end
