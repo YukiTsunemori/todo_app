@@ -1,13 +1,8 @@
 class Users::SessionsController < Devise::SessionsController
-  before_action :configure_sign_in_params, only: [:create]
+
   respond_to :json
-
-  def create
-    super
-  end
-
+  
   private
-
   def respond_with(resource, _opts={})
     render json: {
       message: "Welcome, you're in",
@@ -36,11 +31,5 @@ class Users::SessionsController < Devise::SessionsController
 
   def failed_logout
     render json: { message: "Something went wrong." }, status: :unauthorized
-  end
-
-  def configure_sign_in_params
-    devise_parameter_sanitizer.permit(:sign_in) do |user_params|
-      user_params.permit(:email, :password)
-    end
   end
 end
